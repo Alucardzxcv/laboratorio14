@@ -15,8 +15,10 @@ class categoriaFactory extends Factory
     public function definition()
     {
         return [
-            'descipcion' => $this->faker->text(),
-            'email' => $this->faker->unique()->safeEmail(),
+            'descripcion' => $this->faker->text(),
+            'estado' =>1
+
+              // 'email' => $this->faker->unique()->safeEmail(),
 
         ];
     }

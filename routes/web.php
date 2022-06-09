@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/categorias', [App\Http\Controllers\CategoriaController::class, 'index']);
+Route::get('/categorias/create', [App\Http\Controllers\CategoriaController::class, 'create']);
+Route::post('/categorias/insert', [App\Http\Controllers\CategoriaController::class, 'insert']);
+Route::get('/categorias/{id}/edit', [App\Http\Controllers\CategoriaController::class, 'edit']);
+Route::post('/categorias/update/{id}', [App\Http\Controllers\CategoriaController::class, 'update']);
+Route::get('/categorias/{id}/delete', [App\Http\Controllers\CategoriaController::class, 'delete']);
