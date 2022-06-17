@@ -45,6 +45,11 @@ class CategoriaController extends Controller
         $categoria->delete();
         return redirect('/categorias');
     }
+    public function prueba(){
 
+        $categorias=categoria::with('articulos')->get();
+        dd($categorias);
+
+    }
 
 }

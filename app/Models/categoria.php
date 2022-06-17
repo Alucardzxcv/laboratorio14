@@ -9,8 +9,10 @@ use Jenssegers\Mongodb\Eloquent\Model as MongoModel;
 class categoria  extends MongoModel
 {
     use HasFactory;
-    protected $fillable = [
-        'descripcion',
-        'email'
-    ];
+
+    public function  articulos(){
+        return $this->hasMany(articulo::class,'categoria_id','_id');
+    }
+
+
 }
