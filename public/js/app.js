@@ -5272,57 +5272,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      drawer: null
+      nombre: 'Manuel Huayhua'
     };
   }
 });
@@ -28384,93 +28337,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "v-app",
-    { attrs: { id: "inspire" } },
-    [
-      _c(
-        "v-system-bar",
-        { attrs: { app: "" } },
-        [
-          _c("v-spacer"),
-          _vm._v(" "),
-          _c("v-icon", [_vm._v("mdi-square")]),
-          _vm._v(" "),
-          _c("v-icon", [_vm._v("mdi-circle")]),
-          _vm._v(" "),
-          _c("v-icon", [_vm._v("mdi-triangle")]),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-app-bar",
-        { attrs: { app: "" } },
-        [
-          _c("v-app-bar-nav-icon", {
-            on: {
-              click: function ($event) {
-                _vm.drawer = !_vm.drawer
-              },
-            },
-          }),
-          _vm._v(" "),
-          _c("v-toolbar-title", [_vm._v("Application")]),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("v-navigation-drawer", {
-        attrs: { fixed: "", temporary: "" },
-        model: {
-          value: _vm.drawer,
-          callback: function ($$v) {
-            _vm.drawer = $$v
-          },
-          expression: "drawer",
-        },
-      }),
-      _vm._v(" "),
-      _c(
-        "v-main",
-        { staticClass: "grey lighten-2" },
-        [
-          _c(
-            "v-container",
-            [
-              _c(
-                "v-row",
-                [
-                  _vm._l(4, function (n) {
-                    return [
-                      _c(
-                        "v-col",
-                        { key: n, staticClass: "mt-2", attrs: { cols: "12" } },
-                        [_c("strong", [_vm._v("Category " + _vm._s(n))])]
-                      ),
-                      _vm._v(" "),
-                      _vm._l(6, function (j) {
-                        return _c(
-                          "v-col",
-                          { key: "" + n + j, attrs: { cols: "6", md: "2" } },
-                          [_c("v-sheet", { attrs: { height: "150" } })],
-                          1
-                        )
-                      }),
-                    ]
-                  }),
-                ],
-                2
-              ),
-            ],
-            1
-          ),
-        ],
-        1
-      ),
-    ],
-    1
-  )
+  return _c("div", [_vm._v("\n    Hola " + _vm._s(_vm.nombre) + "\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
