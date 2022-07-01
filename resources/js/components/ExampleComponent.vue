@@ -7,7 +7,7 @@
 <script>
 export default {
     data: () => ({
-        nombre: 'Manuel Huayhua',
+        nombre: 'Laquise,Carrillo, Aquino',
 
     }),
 }
